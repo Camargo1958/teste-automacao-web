@@ -230,6 +230,229 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenarioOutline({
+  "name": "Tentar cadastrar usuario com nome em branco",
+  "description": "",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "name": "@nome_em_branco"
+    }
+  ]
+});
+formatter.step({
+  "name": "que eu tenha acessado a tela de cadastramento",
+  "keyword": "Dado "
+});
+formatter.step({
+  "name": "preencho o campo Nome com o valor \"\u003cnome\u003e\"",
+  "keyword": "Quando "
+});
+formatter.step({
+  "name": "preencho o campo E-mail com o valor \"\u003cemail\u003e\"",
+  "keyword": "E "
+});
+formatter.step({
+  "name": "preencho o campo Senha com o valor \"\u003csenha\u003e\"",
+  "keyword": "E "
+});
+formatter.step({
+  "name": "aciono o botao Cadastrar",
+  "keyword": "E "
+});
+formatter.step({
+  "name": "o sistema apresenta a mensagem de erro \"\u003cerro\u003e\"",
+  "keyword": "Entao "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Exemplos",
+  "rows": [
+    {
+      "cells": [
+        "nome",
+        "email",
+        "senha",
+        "erro"
+      ]
+    },
+    {
+      "cells": [
+        "",
+        "paulo.silva@yahoo.com",
+        "12345678",
+        "O campo Nome é obrigatório."
+      ]
+    },
+    {
+      "cells": [
+        "",
+        "jonas.melo@triunf.nz",
+        "12345679",
+        "O campo Nome é obrigatório."
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Tentar cadastrar usuario com nome em branco",
+  "description": "",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "name": "@cadastrar"
+    },
+    {
+      "name": "@nome_em_branco"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "que eu tenha acessado a tela de cadastramento",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.queEuTenhaAcessadoATelaDeCadastramento()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Nome com o valor \"\"",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo E-mail com o valor \"paulo.silva@yahoo.com\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoEMailComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Senha com o valor \"12345678\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoSenhaComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "aciono o botao Cadastrar",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.acionoOBotao()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "o sistema apresenta a mensagem de erro \"O campo Nome é obrigatório.\"",
+  "keyword": "Entao "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.oSistemaApresentaAMensagemDeErro(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Tentar cadastrar usuario com nome em branco",
+  "description": "",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "name": "@cadastrar"
+    },
+    {
+      "name": "@nome_em_branco"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "que eu tenha acessado a tela de cadastramento",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.queEuTenhaAcessadoATelaDeCadastramento()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Nome com o valor \"\"",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo E-mail com o valor \"jonas.melo@triunf.nz\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoEMailComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Senha com o valor \"12345679\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoSenhaComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "aciono o botao Cadastrar",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.acionoOBotao()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "o sistema apresenta a mensagem de erro \"O campo Nome é obrigatório.\"",
+  "keyword": "Entao "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.oSistemaApresentaAMensagemDeErro(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenarioOutline({
   "name": "Tentar cadastrar usuario com nome incompleto",
   "description": "",
   "keyword": "Esquema do Cenario",
@@ -676,6 +899,229 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenarioOutline({
+  "name": "Tentar cadastrar usuario com email em branco",
+  "description": "",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "name": "@email_em_branco"
+    }
+  ]
+});
+formatter.step({
+  "name": "que eu tenha acessado a tela de cadastramento",
+  "keyword": "Dado "
+});
+formatter.step({
+  "name": "preencho o campo Nome com o valor \"\u003cnome\u003e\"",
+  "keyword": "Quando "
+});
+formatter.step({
+  "name": "preencho o campo E-mail com o valor \"\u003cemail\u003e\"",
+  "keyword": "E "
+});
+formatter.step({
+  "name": "preencho o campo Senha com o valor \"\u003csenha\u003e\"",
+  "keyword": "E "
+});
+formatter.step({
+  "name": "aciono o botao Cadastrar",
+  "keyword": "E "
+});
+formatter.step({
+  "name": "o sistema apresenta a mensagem de erro \"\u003cerro\u003e\"",
+  "keyword": "Entao "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Exemplos",
+  "rows": [
+    {
+      "cells": [
+        "nome",
+        "email",
+        "senha",
+        "erro"
+      ]
+    },
+    {
+      "cells": [
+        "Paulo Silva",
+        "",
+        "12345678",
+        "O campo E-mail é obrigatório."
+      ]
+    },
+    {
+      "cells": [
+        "Jonas Melo",
+        "",
+        "12345679",
+        "O campo E-mail é obrigatório."
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Tentar cadastrar usuario com email em branco",
+  "description": "",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "name": "@cadastrar"
+    },
+    {
+      "name": "@email_em_branco"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "que eu tenha acessado a tela de cadastramento",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.queEuTenhaAcessadoATelaDeCadastramento()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Nome com o valor \"Paulo Silva\"",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo E-mail com o valor \"\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoEMailComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Senha com o valor \"12345678\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoSenhaComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "aciono o botao Cadastrar",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.acionoOBotao()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "o sistema apresenta a mensagem de erro \"O campo E-mail é obrigatório.\"",
+  "keyword": "Entao "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.oSistemaApresentaAMensagemDeErro(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Tentar cadastrar usuario com email em branco",
+  "description": "",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "name": "@cadastrar"
+    },
+    {
+      "name": "@email_em_branco"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "que eu tenha acessado a tela de cadastramento",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.queEuTenhaAcessadoATelaDeCadastramento()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Nome com o valor \"Jonas Melo\"",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo E-mail com o valor \"\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoEMailComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Senha com o valor \"12345679\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoSenhaComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "aciono o botao Cadastrar",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.acionoOBotao()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "o sistema apresenta a mensagem de erro \"O campo E-mail é obrigatório.\"",
+  "keyword": "Entao "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.oSistemaApresentaAMensagemDeErro(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenarioOutline({
   "name": "Tentar cadastrar usuario com senha com mesnos de 8 caracteres",
   "description": "",
   "keyword": "Esquema do Cenario",
@@ -887,6 +1333,229 @@ formatter.result({
 });
 formatter.step({
   "name": "o sistema apresenta a mensagem de erro \"A senha deve conter ao menos 8 caracteres.\"",
+  "keyword": "Entao "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.oSistemaApresentaAMensagemDeErro(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "name": "Tentar cadastrar usuario com senha em branco",
+  "description": "",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "name": "@senha_em_branco"
+    }
+  ]
+});
+formatter.step({
+  "name": "que eu tenha acessado a tela de cadastramento",
+  "keyword": "Dado "
+});
+formatter.step({
+  "name": "preencho o campo Nome com o valor \"\u003cnome\u003e\"",
+  "keyword": "Quando "
+});
+formatter.step({
+  "name": "preencho o campo E-mail com o valor \"\u003cemail\u003e\"",
+  "keyword": "E "
+});
+formatter.step({
+  "name": "preencho o campo Senha com o valor \"\u003csenha\u003e\"",
+  "keyword": "E "
+});
+formatter.step({
+  "name": "aciono o botao Cadastrar",
+  "keyword": "E "
+});
+formatter.step({
+  "name": "o sistema apresenta a mensagem de erro \"\u003cerro\u003e\"",
+  "keyword": "Entao "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Exemplos",
+  "rows": [
+    {
+      "cells": [
+        "nome",
+        "email",
+        "senha",
+        "erro"
+      ]
+    },
+    {
+      "cells": [
+        "Paulo Silva",
+        "paulo.silva@yahoo.com",
+        "",
+        "O campo Senha é obrigatório."
+      ]
+    },
+    {
+      "cells": [
+        "Jonas Melo",
+        "jonas.melo@triunf.nz",
+        "",
+        "O campo Senha é obrigatório."
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Tentar cadastrar usuario com senha em branco",
+  "description": "",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "name": "@cadastrar"
+    },
+    {
+      "name": "@senha_em_branco"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "que eu tenha acessado a tela de cadastramento",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.queEuTenhaAcessadoATelaDeCadastramento()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Nome com o valor \"Paulo Silva\"",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo E-mail com o valor \"paulo.silva@yahoo.com\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoEMailComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Senha com o valor \"\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoSenhaComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "aciono o botao Cadastrar",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.acionoOBotao()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "o sistema apresenta a mensagem de erro \"O campo Senha é obrigatório.\"",
+  "keyword": "Entao "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.oSistemaApresentaAMensagemDeErro(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Tentar cadastrar usuario com senha em branco",
+  "description": "",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "name": "@cadastrar"
+    },
+    {
+      "name": "@senha_em_branco"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "que eu tenha acessado a tela de cadastramento",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.queEuTenhaAcessadoATelaDeCadastramento()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Nome com o valor \"Jonas Melo\"",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo E-mail com o valor \"jonas.melo@triunf.nz\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoEMailComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Senha com o valor \"\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoSenhaComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "aciono o botao Cadastrar",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.acionoOBotao()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "o sistema apresenta a mensagem de erro \"O campo Senha é obrigatório.\"",
   "keyword": "Entao "
 });
 formatter.match({
