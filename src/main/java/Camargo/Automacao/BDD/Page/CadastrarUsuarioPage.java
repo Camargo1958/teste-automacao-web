@@ -54,14 +54,33 @@ public class CadastrarUsuarioPage extends CadastrarUsuarioMap {
         return obterValorTexto(tableTitle);
     }
 
-    public String obterNomeTabelaUsuariosCadastrados() {
+    public String obterUserId1TabelaUsuariosCadastrados() {
+
+        return obterValorTexto(tdUserId1);
+    }
+
+    public String obterNome1TabelaUsuariosCadastrados() {
 
         return obterValorTexto(tdUserName1);
     }
 
-    public String obterEmailTabelaUsuariosCadastrados() {
+    public String obterEmail1TabelaUsuariosCadastrados() {
 
         return obterValorTexto(tdUserEmail1);
     }
 
+    public String obterUserId2TabelaUsuariosCadastrados() {
+
+        return obterValorTexto(tdUserId2);
+    }
+
+    public String obterNome2TabelaUsuariosCadastrados() {
+
+        return obterValorTexto(tdUserName2);
+    }
+
+    public String obterEmail2TabelaUsuariosCadastrados() {
+
+        return obterValorTexto(tdUserEmail2);
+    }
 }

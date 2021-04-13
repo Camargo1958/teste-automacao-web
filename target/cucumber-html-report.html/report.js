@@ -10,12 +10,12 @@ formatter.feature({
   ]
 });
 formatter.scenarioOutline({
-  "name": "Cadastrar usuario com sucesso",
+  "name": "Cadastrar um usuario com sucesso",
   "description": "",
   "keyword": "Esquema do Cenario",
   "tags": [
     {
-      "name": "@sucesso"
+      "name": "@sucesso1"
     }
   ]
 });
@@ -72,7 +72,7 @@ formatter.examples({
   ]
 });
 formatter.scenario({
-  "name": "Cadastrar usuario com sucesso",
+  "name": "Cadastrar um usuario com sucesso",
   "description": "",
   "keyword": "Esquema do Cenario",
   "tags": [
@@ -80,7 +80,7 @@ formatter.scenario({
       "name": "@cadastrar"
     },
     {
-      "name": "@sucesso"
+      "name": "@sucesso1"
     }
   ]
 });
@@ -151,7 +151,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Cadastrar usuario com sucesso",
+  "name": "Cadastrar um usuario com sucesso",
   "description": "",
   "keyword": "Esquema do Cenario",
   "tags": [
@@ -159,7 +159,7 @@ formatter.scenario({
       "name": "@cadastrar"
     },
     {
-      "name": "@sucesso"
+      "name": "@sucesso1"
     }
   ]
 });
@@ -222,6 +222,331 @@ formatter.step({
 });
 formatter.match({
   "location": "CadastrarUsuarioSteps.oCadastramentoDoUsuarioComNomeEEMailÉRealizadoComSucesso(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "name": "Cadastrar dois usuarios com sucesso",
+  "description": "",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "name": "@sucesso2"
+    }
+  ]
+});
+formatter.step({
+  "name": "que eu tenha acessado a tela de cadastramento",
+  "keyword": "Dado "
+});
+formatter.step({
+  "name": "preencho o campo Nome com o valor \"\u003cnome1\u003e\"",
+  "keyword": "Quando "
+});
+formatter.step({
+  "name": "preencho o campo E-mail com o valor \"\u003cemail1\u003e\"",
+  "keyword": "E "
+});
+formatter.step({
+  "name": "preencho o campo Senha com o valor \"\u003csenha1\u003e\"",
+  "keyword": "E "
+});
+formatter.step({
+  "name": "aciono o botao Cadastrar",
+  "keyword": "E "
+});
+formatter.step({
+  "name": "preencho o campo Nome com o valor \"\u003cnome2\u003e\"",
+  "keyword": "E "
+});
+formatter.step({
+  "name": "preencho o campo E-mail com o valor \"\u003cemail2\u003e\"",
+  "keyword": "E "
+});
+formatter.step({
+  "name": "preencho o campo Senha com o valor \"\u003csenha2\u003e\"",
+  "keyword": "E "
+});
+formatter.step({
+  "name": "aciono o botao Cadastrar",
+  "keyword": "E "
+});
+formatter.step({
+  "name": "o cadastramento dos usuarios com nomes \"\u003cnome1\u003e\" e \"\u003cnome2\u003e\" e E-mails \"\u003cemail1\u003e\" e \"\u003cemail2\u003e\" é realizado com sucesso",
+  "keyword": "Entao "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Exemplos",
+  "rows": [
+    {
+      "cells": [
+        "nome1",
+        "email1",
+        "senha1",
+        "nome2",
+        "email2",
+        "senha2"
+      ]
+    },
+    {
+      "cells": [
+        "Carlos Gomes",
+        "carlos.gomes@triunf.au",
+        "12345679",
+        "Jonas Melo",
+        "jonas.melo@alfa.nzy",
+        "12345689"
+      ]
+    },
+    {
+      "cells": [
+        "Pedro Silva",
+        "pedro.silva@cartun.de",
+        "123456afg",
+        "Saulo Davila",
+        "saulo.davila@croce.can",
+        "ab345689"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Cadastrar dois usuarios com sucesso",
+  "description": "",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "name": "@cadastrar"
+    },
+    {
+      "name": "@sucesso2"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "que eu tenha acessado a tela de cadastramento",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.queEuTenhaAcessadoATelaDeCadastramento()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Nome com o valor \"Carlos Gomes\"",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo E-mail com o valor \"carlos.gomes@triunf.au\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoEMailComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Senha com o valor \"12345679\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoSenhaComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "aciono o botao Cadastrar",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.acionoOBotao()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Nome com o valor \"Jonas Melo\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo E-mail com o valor \"jonas.melo@alfa.nzy\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoEMailComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Senha com o valor \"12345689\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoSenhaComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "aciono o botao Cadastrar",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.acionoOBotao()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "o cadastramento dos usuarios com nomes \"Carlos Gomes\" e \"Jonas Melo\" e E-mails \"carlos.gomes@triunf.au\" e \"jonas.melo@alfa.nzy\" é realizado com sucesso",
+  "keyword": "Entao "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.oCadastramentoDosUsuariosComNomesEEEMailsECarlosGomesTriunfAuÉRealizadoComSucesso(String,String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Cadastrar dois usuarios com sucesso",
+  "description": "",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "name": "@cadastrar"
+    },
+    {
+      "name": "@sucesso2"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "que eu tenha acessado a tela de cadastramento",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.queEuTenhaAcessadoATelaDeCadastramento()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Nome com o valor \"Pedro Silva\"",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo E-mail com o valor \"pedro.silva@cartun.de\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoEMailComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Senha com o valor \"123456afg\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoSenhaComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "aciono o botao Cadastrar",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.acionoOBotao()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Nome com o valor \"Saulo Davila\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo E-mail com o valor \"saulo.davila@croce.can\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoEMailComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "preencho o campo Senha com o valor \"ab345689\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.preenchoOCampoSenhaComOValor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "aciono o botao Cadastrar",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.acionoOBotao()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "o cadastramento dos usuarios com nomes \"Pedro Silva\" e \"Saulo Davila\" e E-mails \"pedro.silva@cartun.de\" e \"saulo.davila@croce.can\" é realizado com sucesso",
+  "keyword": "Entao "
+});
+formatter.match({
+  "location": "CadastrarUsuarioSteps.oCadastramentoDosUsuariosComNomesEEEMailsECarlosGomesTriunfAuÉRealizadoComSucesso(String,String,String,String)"
 });
 formatter.result({
   "status": "passed"
