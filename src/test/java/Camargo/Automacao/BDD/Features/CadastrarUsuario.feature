@@ -20,6 +20,20 @@ Funcionalidade: Realizar o cadastro de novos usuários
     | Alfredo Chaves | alfredo.chaves@yahoo.com | 12345678 |
     | Carlos Gomes   | carlos.gomes@triunf.au   | 12345679 |
 
+  @nome_em_branco
+  Esquema do Cenario: Tentar cadastrar usuario com nome em branco
+    Dado que eu tenha acessado a tela de cadastramento
+    Quando preencho o campo Nome com o valor "<nome>"
+    E preencho o campo E-mail com o valor "<email>"
+    E preencho o campo Senha com o valor "<senha>"
+    E aciono o botao Cadastrar
+    Entao o sistema apresenta a mensagem de erro "<erro>"
+
+    Exemplos:
+      | nome           | email                 | senha    | erro                        |
+      |                | paulo.silva@yahoo.com | 12345678 | O campo Nome é obrigatório. |
+      |                | jonas.melo@triunf.nz  | 12345679 | O campo Nome é obrigatório. |
+
   @nome_incompleto
   Esquema do Cenario: Tentar cadastrar usuario com nome incompleto
     Dado que eu tenha acessado a tela de cadastramento
@@ -48,6 +62,20 @@ Funcionalidade: Realizar o cadastro de novos usuários
       | Paulo Silva    | paulo.silva@yahoo        | 12345678 | Por favor, insira um e-mail válido. |
       | Jonas Melo     | jonas.melo@triunf        | 12345679 | Por favor, insira um e-mail válido. |
 
+  @email_em_branco
+  Esquema do Cenario: Tentar cadastrar usuario com email em branco
+    Dado que eu tenha acessado a tela de cadastramento
+    Quando preencho o campo Nome com o valor "<nome>"
+    E preencho o campo E-mail com o valor "<email>"
+    E preencho o campo Senha com o valor "<senha>"
+    E aciono o botao Cadastrar
+    Entao o sistema apresenta a mensagem de erro "<erro>"
+
+    Exemplos:
+      | nome           | email   | senha    | erro                          |
+      | Paulo Silva    |         | 12345678 | O campo E-mail é obrigatório. |
+      | Jonas Melo     |         | 12345679 | O campo E-mail é obrigatório. |
+
   @senha_invalida
   Esquema do Cenario: Tentar cadastrar usuario com senha com mesnos de 8 caracteres
     Dado que eu tenha acessado a tela de cadastramento
@@ -61,3 +89,17 @@ Funcionalidade: Realizar o cadastro de novos usuários
       | nome           | email                     | senha    | erro                                       |
       | Paulo Silva    | paulo.silva@yahoo.com     | 1asdfg   | A senha deve conter ao menos 8 caracteres. |
       | Jonas Melo     | jonas.melo@triunf.nz      | rsdggj   | A senha deve conter ao menos 8 caracteres. |
+
+  @senha_em_branco
+  Esquema do Cenario: Tentar cadastrar usuario com senha em branco
+    Dado que eu tenha acessado a tela de cadastramento
+    Quando preencho o campo Nome com o valor "<nome>"
+    E preencho o campo E-mail com o valor "<email>"
+    E preencho o campo Senha com o valor "<senha>"
+    E aciono o botao Cadastrar
+    Entao o sistema apresenta a mensagem de erro "<erro>"
+
+    Exemplos:
+      | nome           | email                     | senha  | erro                         |
+      | Paulo Silva    | paulo.silva@yahoo.com     |        | O campo Senha é obrigatório. |
+      | Jonas Melo     | jonas.melo@triunf.nz      |        | O campo Senha é obrigatório. |
