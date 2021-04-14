@@ -33,11 +33,21 @@ public class CadastrarUsuarioMap extends PaginaBase {
     @FindBy(xpath = "//*[@id=\"root\"]/div/div/div[2]/h2[2]")
     protected WebElement tableTitle;
 
+    @FindBy(id = "tdUserId1")
+    protected  WebElement tdUserId1;
+
     @FindBy(id = "tdUserName1")
     protected  WebElement tdUserName1;
 
     @FindBy(id = "tdUserEmail1")
     protected WebElement tdUserEmail1;
 
+    @FindBy(id = "tdUserId2")
+    protected  WebElement tdUserId2;
 
+    @FindBy(id = "tdUserName2")
+    protected  WebElement tdUserName2;
+
+    @FindBy(id = "tdUserEmail2")
+    protected WebElement tdUserEmail2;
 }
