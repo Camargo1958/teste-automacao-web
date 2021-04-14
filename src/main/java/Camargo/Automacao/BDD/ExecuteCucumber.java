@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        tags={""},
+        tags={"@excluir_um_usuario"},
         features = {"src/test/java/Camargo/Automacao/BDD/Features"},
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         plugin={"pretty", "html:target/cucumber-html-report.html"},

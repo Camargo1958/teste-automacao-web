@@ -121,3 +121,22 @@ Funcionalidade: Realizar o cadastro de novos usuários
       | nome           | email                     | senha  | erro                         |
       | Paulo Silva    | paulo.silva@yahoo.com     |        | O campo Senha é obrigatório. |
       | Jonas Melo     | jonas.melo@triunf.nz      |        | O campo Senha é obrigatório. |
+
+  @excluir_um_usuario
+  Esquema do Cenario: Cadastrar dois usuarios e excluir um com sucesso
+    Dado que eu tenha acessado a tela de cadastramento
+    E preencho o campo Nome com o valor "<nome1>"
+    E preencho o campo E-mail com o valor "<email1>"
+    E preencho o campo Senha com o valor "<senha1>"
+    E aciono o botao Cadastrar
+    E preencho o campo Nome com o valor "<nome2>"
+    E preencho o campo E-mail com o valor "<email2>"
+    E preencho o campo Senha com o valor "<senha2>"
+    E aciono o botao Cadastrar
+    E o cadastramento dos usuarios "<nome1>" e "<nome2>" e E-mails "<email1>" e "<email2>" é realizado com sucesso
+    Quando eu excluo o primeiro usuario
+    Entao o sistema atualiza a tabela de usuarios e apresenta apenas o segundo usuario com nome "<nome2>" e E-mail "<email2>"
+
+    Exemplos:
+      | nome1          | email1                   | senha1    | nome2          | email2                   | senha2   |
+      | Carlos Gomes   | carlos.gomes@triunf.au   | 12345679  | Jonas Melo     | jonas.melo@alfa.nzy      | 12345689 |
