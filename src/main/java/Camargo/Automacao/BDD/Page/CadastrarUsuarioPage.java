@@ -83,4 +83,9 @@ public class CadastrarUsuarioPage extends CadastrarUsuarioMap {
 
         return obterValorTexto(tdUserEmail2);
     }
+
+    public void excluirUsuario1() {
+        clicarElemento(removeUser1);
+    }
+
 }

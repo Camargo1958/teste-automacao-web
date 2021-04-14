@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
         tags={""},
         features = {"src/test/java/Camargo/Automacao/BDD/Features"},
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        plugin={"pretty", "html:target/cucumber-html-report.html"},
+        plugin={"pretty", "html:target/cucumber-html-report.html","json:target/cucumber.json"},
         glue={""},
         monochrome = true,
         strict = true,

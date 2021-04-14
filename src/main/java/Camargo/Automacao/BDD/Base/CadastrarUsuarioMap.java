@@ -50,4 +50,8 @@ public class CadastrarUsuarioMap extends PaginaBase {
 
     @FindBy(id = "tdUserEmail2")
     protected WebElement tdUserEmail2;
+
+    @FindBy(id = "removeUser1")
+    protected WebElement removeUser1;
+
 }
